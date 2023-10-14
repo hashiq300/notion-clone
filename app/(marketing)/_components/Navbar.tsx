@@ -23,7 +23,7 @@ export default function Navbar() {
     >
       <Logo />
       <div className="md:ml-auto md:justify-end justify-between w-full flex items-center gap-x-3.5">
-        {isLoading && <Button role="alert" aria-busy="true" className="min-w-[8em]"  size="sm" disabled><Skeleton className="w-[5.5em] h-5" /></Button>}
+        {isLoading && <Button  className="min-w-[8em]"  size="sm" disabled><Skeleton className="w-[5.5em] h-5" /></Button>}
         {!isLoading && !isAuthenticated && (
           <>
           <SignInButton mode="modal">

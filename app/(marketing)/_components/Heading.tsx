@@ -23,19 +23,19 @@ function Heading() {
         )}
         {!isLoading && isAuthenticated && (
 
-           <Button className="gap-1.5 group min-w-[12.5em]" asChild>
+           <Button className="gap-1.5 group/button min-w-[12.5em]" asChild>
                <Link href="/documents">
                    Enter Jotion
-                   <ArrowRight className="h-4 group-hover:translate-x-2 group-focus-visible:translate-x-2 group-focus:translate-x-2 transition-transform" />
+                   <ArrowRight className="h-4 group-hover/button:translate-x-2 group-focus-visible:translate-x-2 group-focus:translate-x-2 transition-transform" />
                </Link>
            </Button>
 
         )}
         {!isAuthenticated && !isLoading && (
            <SignInButton mode="modal">
-               <Button className="gap-1.5 group min-w-[12.5em]">
+               <Button className="gap-1.5 group/button min-w-[12.5em]">
                    Get Jotion Free
-                   <ArrowRight className="h-4 group-hover:translate-x-2 group-focus-visible:translate-x-2 group-focus:translate-x-2 transition-transform" />
+                   <ArrowRight className="h-4 group-hover/button:translate-x-2 group-focus-visible:translate-x-2 group-focus:translate-x-2 transition-transform" />
                </Button>
            </SignInButton>
         )}
